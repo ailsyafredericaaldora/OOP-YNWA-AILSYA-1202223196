@@ -29,4 +29,6 @@ public class account {
             System.out.println(" saldo tidak mencukupi untuk melakukan penarikan");
          }
     }
+    public void withdraw(int i) {
+    }
 }

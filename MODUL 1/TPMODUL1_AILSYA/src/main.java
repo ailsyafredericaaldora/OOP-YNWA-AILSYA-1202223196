@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 
 public class main {
-    public static void main(String[]args){
+    
+    public static void main(String[] args ){
         bank bank  = new bank();
         account account1 = new account("Bunga Citra", "1202224567", 200000.0);
         account account2 = new account ( " Clarissa", "1202224810" ,300000.0);
@@ -20,7 +21,7 @@ public class main {
         System.out.println();
 
         account1.deposit(20000);
-        account2.whitdraw(300000);
+        account2.withdraw(600000);
         account4.deposit(150000.0);
 
         System.out.println("saldo akun Bunga Citra setelah menyetor:" + account1.getbalance());
@@ -35,11 +36,11 @@ public class main {
         ArrayList<account>allAccounts =
         bank.getAllaccounts();
         for(account account : allAccounts){
-            System.out.println(" nama:"+ account.getname() + ",nomor akun:" + account.getaccountnumber() + ", saldo: " + account.getbalance());
+        System.out.println(" nama:"+ account.getname() + ",nomor akun:" + account.getaccountnumber() + ", saldo: " + account.getbalance());
 
         }
         System.out.println();
 
-
+    
     }
 }
